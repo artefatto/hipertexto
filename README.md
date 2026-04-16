@@ -7,7 +7,7 @@
 As of now, you can use `pipx` to install Hipertexto in your machine:
 
 ```sh
-pipx install git+https://codeberg.org/hipermidia/hipertexto
+pipx install git+https://github.com/artefatto/hipertexto
  ```
 
 ## Setting Up the Development Environment
@@ -17,7 +17,7 @@ To set up the development environment for Hipertexto, you'll need to have Python
 1. **Clone the Repository:**
 
    ```sh
-   git clone ssh://git@codeberg.org/hipermidia/hipertexto.git
+   git clone ssh://git@github.com/artefatto/hipertexto.git
    cd hipertexto
    ```
 
