@@ -3,7 +3,7 @@ from http import HTTPStatus
 from threading import Thread
 from unittest.mock import MagicMock, patch
 
-import httpx
+import httpx2
 import pytest
 
 from hipertexto.main import app
@@ -36,7 +36,7 @@ def test_serve_no_reload_starts_http_server(sample_project, monkeypatch):
     # give the server time to start
     time.sleep(1)
 
-    response = httpx.get('http://localhost:8000/', timeout=2)
+    response = httpx2.get('http://localhost:8000/', timeout=2)
     assert response.status_code == HTTPStatus.OK
     assert 'html' in response.text.lower()
 
